@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ddd;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+#main {
+  text-align: center;
+}
+
+.container {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+#title {
+  margin: 1rem 0;
+}
+
+.card-img img {
+  height: 500px;
+}
+
+.card-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card .card-footer {
+  padding: 1rem;
+  background: #fff;
+}
+
+#tribute-info {
+  margin-top: 1rem;
+}
+
+#tribute-info ol {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+#tribute-info ol li {
+  margin-top: 1rem;
+}
+
+#tribute-info ol li p span {
+  font-weight: 600;
+}
