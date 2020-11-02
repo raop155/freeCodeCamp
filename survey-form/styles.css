@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #6c5ce7;
+  color: #fff;
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* Header */
+
+#header {
+  color: #dfe6e9;
+  text-align: center;
+}
+
+/* Section Form */
+.form-control {
+  margin: 1rem 0;
+}
+
+#survey-form input,
+#survey-form textarea,
+select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#survey-form input[type='radio'],
+#survey-form input[type='checkbox'] {
+  width: auto;
+}
+
+#survey-form label,
+#survey-form p {
+  margin-bottom: 0.25rem;
+}
+
+#survey-form label {
+  display: inline-block;
+}
+
+#survey-form input[type='submit'] {
+  text-transform: uppercase;
+  color: #fff;
+  background: #a29bfe;
+  padding: 1rem 2rem;
+}
