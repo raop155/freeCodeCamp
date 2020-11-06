@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  background: #ddd;
+  line-height: 1.5;
+}
+
+.app {
+  display: grid;
+  /* gap: 0.5rem; */
+}
+
+.container {
+  padding: 1rem;
+}
+
+/* Navbar */
+
+#navbar {
+  width: 100%;
+  text-align: center;
+}
+
+#navbar .container {
+  padding: 0 0;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+#navbar ul {
+  margin: 1rem 0;
+  border: 1px solid #333;
+  list-style: none;
+}
+
+#navbar ul a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+#navbar ul a:hover {
+  color: #005b96;
+  text-decoration: underline;
+}
+
+/* Aside */
+
+#aside header {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#aside p {
+  margin: 1rem 0;
+}
+
+#aside ul {
+  padding-left: 2rem;
+}
+
+#aside ul li {
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  color: #474554;
+}
+
+#aside pre {
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  height: auto !important;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#aside code {
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .app {
+    grid-template-columns: 285px auto;
+  }
+
+  #navbar {
+    position: fixed;
+    width: 285px;
+    height: 100vh;
+    text-align: left;
+    border-right: 1px solid #333;
+  }
+
+  #navbar .container {
+    padding: 0 0;
+  }
+
+  #navbar ul {
+    border: none;
+  }
+  #aside {
+    grid-column: 2/3;
+  }
+}
